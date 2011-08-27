@@ -1,0 +1,133 @@
+/**
+ * Sligar
+ * Copyleft (C) 2011, Edgar Hoo
+ * http://edgarhoo.net/ - mail@edgarhoo.net
+ *
+ * Version: alpha
+ * 
+ * URI: http://github.com/edgarhoo/sligar
+ */
+
+/* CSS Reset */
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #fff;
+    color: #000;
+}
+body{
+    font: 1em/1.5 tahoma, arial, sans-serif;
+    overflow-y: scroll;
+}
+img, fieldset, button{
+    border: 0 none;
+}
+button, input, textarea, select{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+legend{
+    color: #000;
+}
+article, aside, footer, header, hgroup, nav, section, /* section elements */
+figcaption, /* grouping elements */
+details, summary{ /* interactive elements */
+    display: block;
+}
+menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+figure{
+    display: block;
+    margin: 0;
+}
+output,time{
+    display: inline;
+}
+mark{
+    display: inline;
+    background: yellow;
+    color: #000;
+}
+address{
+    padding: 0;
+}
+
+
+/* Styles for slides */
+
+.slides > article {
+    display: none;
+    width: 48em;
+    height: 36em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18em;
+    margin-left: -24em;
+    overflow: hidden;
+    border: .1em solid rgba(0, 0, 0, .3);
+    
+    -o-transition: -o-transform .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+.slides > article.current {
+    display: block;
+    
+    -o-transform: translate(0);
+    -moz-transform: translate(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate(0);
+}
+
+/* Builds */
+
+.build > * {
+    -o-transition: opacity 0.5s ease-in-out 0.2s;
+    -moz-transition: opacity 0.5s ease-in-out 0.2s;
+    -webkit-transition: opacity 0.5s ease-in-out 0.2s;
+    transition: opacity 0.5s ease-in-out 0.2s;
+}
+
+.to-build {
+    opacity: 0;
+}
+
+/* Layouts */
+
+.layouts{
+    display: none;
+}
+
+/* Areas */
+.area-ordinal{
+    position: absolute;
+    top: 1em;
+    right: 3em;
+    z-index: 9999;
+}
+.area-nav{
+    position: absolute;
+    width: 10em;
+    height: 100%;
+    cursor: pointer;
+}
+.area-slide-prev{
+    left: 50%;
+    margin-left: -33em;
+    z-index: 6489;
+}
+.area-slide-next{
+    right: 50%;
+    margin-right: -33em;
+    z-index: 8964;
+}
+
+/* Overview */

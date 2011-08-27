@@ -1,0 +1,173 @@
+/**
+ * Sligar
+ * Copyleft (C) 2011, Edgar Hoo
+ * http://edgarhoo.net/ - mail@edgarhoo.net
+ *
+ * Version: alpha
+ * 
+ * URI: http://github.com/edgarhoo/sligar
+ */
+
+/* slide */
+.slides > article{
+    padding: 1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #666;
+    
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -o-border-radius: .8em;
+    -moz-border-radius: .8em;
+    -webkit-border-radius: .8em;
+    border-radius: .8em;
+    
+    box-shadow: 0 .18em .5em rgba(0, 0, 0, .1);
+}
+.area-ordinal{
+    font-size: 1.6em;
+}
+
+/* elements */
+h1{
+    font-size: 2em;
+    color: #333;
+}
+h2{
+    font-size: 1.8em;
+    color: #333;
+}
+h3{
+    font-size: 1.6em;
+    color: #333;
+}
+h4{
+    font-size: 1.4em;
+    color: #333;
+}
+h5{
+    font-size: 1.2em;
+    color: #333;
+}
+h6{
+    margin-bottom: 0.6em;
+    font-size: 1em;
+    color: #333;
+}
+small{
+    font-size: .8em;
+}
+nav ol{
+    font-size: 1.4em;
+    line-height: 2em;
+}
+blockquote{
+    padding: .2em .4em;
+    background-color: #f0f0f0;
+}
+a:link,
+a:visited{
+    color: #00e;
+}
+a:hover,
+a:active{
+    color: #000;
+}
+/*
+blockquote{
+    margin: .5em 2em;
+}
+p{
+    margin-bottom: 1em;
+}
+p:last-of-type{
+    margin-bottom: 0;
+}
+ol,
+ul{
+    margin-left: 4em;
+}
+ol ol,
+ul ul,
+ol ul,
+ul ol{
+    margin-left: 3em;
+}
+dd{
+    margin-left: 3em;
+}
+*/
+table{
+    border-collapse: separate;
+    border-spacing: 1px;
+    background: #ccc;
+}
+th{
+    background: #fff;
+    color: #333;
+}
+td{
+    background: #fff;
+    padding: 4px 8px;
+}
+iframe{
+    border: 1px solid silver;
+}
+
+/* article home */
+.home hgroup{
+    text-align: center;
+}
+.home h1{
+    font-size: 2.6em;
+    margin-top: 3.6em;
+    margin-bottom: .2em;
+}
+.home h2{
+    font-size: 1.6em;
+    margin-left: 4em;
+}
+.home p{
+    text-align: right;
+    padding-right: 4em;
+}
+.home p:first-of-type{
+    margin-top: 12em;
+}
+
+/* article end */
+.end{
+    text-align: center;
+}
+.end hgroup{
+    margin-top: 12em;
+}
+.end h1{
+    font-size: 2.4em;
+}
+
+/* layout footer */
+.slides > article footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.8em;
+    line-height: 2.8em;
+    border-top: .1em solid rgba(0, 0, 0, .3);
+
+    -o-border-radius: 1em 0;
+    -moz-border-radius: 1em 0;
+    -webkit-border-radius: 1em 0;
+    border-radius: 1em 0;
+}
+.slides > article footer .title{
+    float: left;
+    padding-left: 1em;
+}
+.slides > article footer .author{
+    float: right;
+    padding-right: 1em;
+}
